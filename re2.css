@@ -55,9 +55,8 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    border-top: 1px solid black;
-    width: 60.2%;
-    height: 52vh;
+    width: 1000px;
+    height: 420px;
 }
 
 .divisor-secao {
@@ -65,6 +64,8 @@ body {
     width: 60.2%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 
@@ -111,4 +112,37 @@ body {
   margin-top: 3px;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+footer {
+    display: flex;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16%;
+}
+
+footer section {
+    margin: 20px 5px;
+    text-align: left;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+#enviar {
+    display: block;
+    text-align: center;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }
