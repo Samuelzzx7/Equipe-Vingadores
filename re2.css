@@ -68,41 +68,47 @@ body {
 }
 
 
-.quarteto {
-  position: relative;
-  display: inline-block;
-  width: 50vh;           
-  height: 30vh;
-  object-fit: cover;      
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  border: 3px solid black;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 14vh;               
-  margin: 50px auto;
+
+.quarteto {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin-bottom: .5em;
+  display: inline-block;
 }
+
 
 body {
     text-align: center;
 }
 
-#ff {
-    margin-left: 33.5vh;
-    position: relative;
+.ff {
+  width: 100%;
+  max-width: 500px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+  position: relative;
 }
 
-#ff h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: -2.2vh;
-    left: 0;
-    z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: white;
-    text-shadow: 1px 1px black;
-    padding-bottom: 2vh;
+.ff #estreia {
+  position: absolute;
+  text-shadow: 1px 1px black;
+  top: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
