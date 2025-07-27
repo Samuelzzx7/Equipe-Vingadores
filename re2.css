@@ -30,6 +30,7 @@
 
 body {
     text-align: center;
+    font-family: "Goldman", sans-serif;
 }
 
 .ff {
@@ -44,7 +45,7 @@ body {
 .ff #estreia {
   position: absolute;
   text-shadow: 1px 1px black;
-  top: 0;
+  bottom: 25.5px;
   color: white;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
@@ -52,6 +53,14 @@ body {
   margin-top: 3px;
   margin-left: 2px;
   margin-right: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 0;
+}
+
+.ff:hover #estreia {
+  opacity: 1;
+  transition: opacity 0.1s ease;
 }
 
 footer {

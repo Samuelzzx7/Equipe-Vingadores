@@ -2,8 +2,9 @@ header {
     margin-bottom: 35px;
 }
 
-h1 {
+h1, footer {
     text-align: center;
+    font-family: "Goldman", sans-serif;
 }
 
 main {
@@ -15,10 +16,13 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    font-size: larger;
+    font-size: x-large;
     margin-top: 50px;
     background-color: rgba(207, 207, 207, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(195, 193, 193, 0.5);
+    color: rgb(5, 5, 5);
+    font-family: 'Roboto', sans-serif;
 }
 
 table th, table td {
@@ -27,11 +31,14 @@ table th, table td {
 }
 
 table th {
-    border: 3px solid rgb(110, 145, 177);
+    background-color: #0a0f1f;
+    color: #00aaff;
+    padding: 12px;
+    font-size: 18px;
 }
 
 table td {
-    border: 2px solid rgb(110, 145, 177);
+    border: 2px solid #080808;
     font-size: large;
 }
 

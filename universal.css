@@ -21,9 +21,16 @@ header {
 
 #menu li {
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 45px;
     color: white;
-    font-size: larger;
+    font-size: x-large;
+    font-family: "Goldman", sans-serif;
+    font-weight: bold;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
 }
 
 #menu ul {
@@ -45,10 +52,10 @@ body {
     width: 250px;
     padding-top: 0;
     margin-top: -10;
-    margin-right: 35px;
+    margin-right: 50px;
     position: relative;
     text-align: center;
-    left:10%;
+    left:9%;
 }
 
 .divisor-secao {

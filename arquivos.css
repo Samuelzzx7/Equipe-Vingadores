@@ -5,12 +5,12 @@ main {
     padding: 10px;
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
 }
 
-h2, h3 {
-    text-align: center;
+#menu ul, h1, footer {
+    font-family: "Goldman", sans-serif;
 }
 
 h3 {
