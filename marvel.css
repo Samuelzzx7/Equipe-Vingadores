@@ -1,0 +1,48 @@
+body {
+    background-image: url(img/black-panther2.jpg);
+    background-size: c;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img {
+    width: 35%;
+    margin: auto;
+    position: relative;
+    bottom: 0px;
+    left: 500px;
+}
+
+#introVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.botao-saiba-mais {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: #fbff00;
+  background-color: transparent;
+  border: 2px solid #ccffd6;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 1000px;
+
+}
+
+.botao-saiba-mais:hover {
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 700px;
+}
+
