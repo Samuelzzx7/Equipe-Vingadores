@@ -71,3 +71,22 @@ article {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+#novoMembro {
+    position: relative;
+    text-align: center;
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    top:70px;
+}
+
+#sallum {
+    display: none;
+}
+
+#aqui, #fechar {
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: "Goldman", sans-serif;
+}
