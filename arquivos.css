@@ -34,15 +34,19 @@ main {
     background-repeat: no-repeat;
 }
 
+.playfair-display-titulo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .arquivos {
      list-style: none;
      padding-top: 2%;
-     clear: le;
 }
 
 .arquivos>li{
     padding-bottom: 15px;
-    font-family: 'Courier New', Courier, monospace;
     color: #141414;
     font-size: large;
 }
@@ -89,4 +93,18 @@ article {
     font-size: 25px;
     cursor: pointer;
     font-family: "Goldman", sans-serif;
+}
+
+
+
+@media (max-width: 860px) {
+    .rostos {
+        width: 80%;
+        height: 600px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .arquivos {
+        clear: left;
+    }
 }

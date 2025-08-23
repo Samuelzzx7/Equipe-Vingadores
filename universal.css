@@ -15,14 +15,13 @@ header {
     height: 130px;
     display: flex;
     align-items: center;
-    padding-left: 10%;
     text-align: center;
 }
 
 #menu li {
     display: inline-block;
     margin-right: 45px;
-    color: white;
+    color: whitesmoke;
     font-size: x-large;
     font-family: "Goldman", sans-serif;
     font-weight: bold;
@@ -41,6 +40,7 @@ body {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     background-color: rgb(0, 0, 0, 0.1);
 }
 
@@ -51,10 +51,9 @@ body {
 #logo {
     width: 250px;
     padding-top: 0;
-    margin-top: -10;
-    margin-right: 22px;
+    margin-left: 7vw;
+    margin-right: 92px;
     position: relative;
-    left:0%;
 }
 
 .divisor-secao {
@@ -106,4 +105,57 @@ footer ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
+}
+
+
+
+
+/*responsible*/
+
+@media (max-width:1440px) and (min-width: 1150px) {
+    header {
+        justify-content: center;
+    }
+
+    #logo {
+        margin-left: 100px;
+        margin-right: 30px;
+        position: relative;
+        left: -100px;
+    }
+
+    #menu li {
+        margin-right: 20px;
+        font-size: larger;
+    }
+
+}
+
+@media (max-width:1150px) {
+    header ul {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    footer {
+        gap: 10%;
+    }
+
+    footer section {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 935px) {
+    #formulario {
+        margin-left: 50px;
+    }
 }

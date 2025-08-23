@@ -17,12 +17,10 @@
 
 .quarteto {
   width: 100%;
-  max-width: 500px;
   height: 280px;
   box-sizing: border-box;
   border: 3px solid black;
   border-radius: 8px;
-  margin-bottom: .5em;
   display: inline-block;
   margin-bottom: 40px;
 }
@@ -63,17 +61,6 @@ body {
   transition: opacity 0.1s ease;
 }
 
-footer {
-    display: flex;
-    background-color: rgba(0, 0, 0);
-    color: white;
-    margin-bottom: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16%;
-}
-
 footer section {
     margin: 20px 5px;
     text-align: left;
@@ -94,4 +81,93 @@ footer ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
+}
+
+
+.noticia-destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    max-width: 1000px;
+  margin: 0 auto;  
+}
+
+.noticia-destaque img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.noticia-destaque img:hover {
+    transform: scale(1.05);
+}
+
+.texto-destaque {
+  margin-top: 40px;
+    min-width: 500px;
+    color: black;
+  text-align: center;  
+}
+
+.texto-destaque h2 {
+    font-size: 1.6rem;
+    color: crimson;
+    margin-bottom: 40px;
+}
+
+.texto-destaque p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.botao-leia {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.botao-leia:hover {
+    background-color: darkred;
+}
+
+
+/* responsividade */
+@media (max-width: 1150px) {
+  #principal {
+    width: 100%;
+    height: auto;
+  }
+
+  .noticia-destaque {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .noticia-destaque img {
+    text-align: center;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ff {
+    height: auto;
+    max-width: 80%; 
+  }
+
+  .quarteto {
+    height: auto;
+  }
+
 }
