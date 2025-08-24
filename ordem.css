@@ -6,6 +6,35 @@ h1, footer {
 main {
     align-items: center;
     margin: 0 12.5%;
+    text-align: center;
+}
+
+.clicavel {
+    position: relative;
+    text-decoration: none;
+    font-family: "Goldman", sans-serif;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.clicavel::after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: #0a0f1f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.clicavel:hover::after {
+    width: 100%;
 }
 
 table {
@@ -60,3 +89,41 @@ table img:hover {
     cursor: pointer;
 }
 
+#video {
+    display:none
+}
+
+#video iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 914px) {
+  #video iframe {
+    height: 380px;
+  }
+}
+
+@media (max-width: 844px) {
+  #video iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 726px) {
+  #video iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  #video iframe {
+    height: 250px;
+  }
+}
