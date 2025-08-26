@@ -222,32 +222,33 @@
         <h1 id="fim"><span class="clicavel">FIM</span></h1>
       <div id="video">
         <div class="divisor-secao"></div>
-        <iframe src="imagens/videoCapitao.mp4" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+        <video id="meuVideo" controls>
+            <source src="imagens/videoCapitao.mp4" type="video/mp4">
+        </video>
         <div class="divisor-secao"></div>
         <h1><span id="fechar" class="clicavel">FECHAR</span></h1>
       </div>
     </main>
 
     <footer>
-    <form id="formulario">
-  <section>
-    <h2>RECEBA  AS ATUALIZAÇÕES</h2>
-    <ul>
-    <li><input id="email" type="text" placeholder="exemplo@gmail.com"></li>
-    <li><input type="checkbox" id="termos">
-    <label for="termos">Termos e condições </label></li>
-    <li></li>
+      <form id="formulario">
+        <section>
+          <h2>RECEBA  AS ATUALIZAÇÕES</h2>
+          <ul>
+          <li><input id="email" type="text" placeholder="exemplo@gmail.com"></li>
+          <li><input type="checkbox" id="termos">
+          <label for="termos">Termos e condições </label></li>
     </ul>
     <button id="enviar" type="submit">Enviar</button>
   </section>
     </form>
-    <form>
+  <form>
     <section>
       <h2>SOBRE A EQUIPE</h2>
-    <p>Equipe Vingadores - Todos os direitos reservados</p>
-    <p>Desenvolvido por: Samuel, Victor Hugo e Thauany</p>
-    <p>Contato: Equipevingadores@gmail.com</p>
-  </section>
+      <p>Desenvolvido por: Samuel, Victor Hugo e Thauany</p>
+      <p>Contato: Equipevingadores@gmail.com</p>
+      <a href="creditos.html">Créditos</a>
+    </section>
   </form>
 </footer>
 <script src="rodape.js"></script>

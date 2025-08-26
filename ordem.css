@@ -93,7 +93,7 @@ table img:hover {
     display:none
 }
 
-#video iframe {
+#video video {
   width: 100%;
   max-width: 800px;
   height: 450px;

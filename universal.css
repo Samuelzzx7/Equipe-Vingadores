@@ -126,6 +126,15 @@ footer ul {
     margin-left: 0;
 }
 
+footer a {
+    text-decoration: none;
+    color: rgb(245, 4, 4);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 
 
