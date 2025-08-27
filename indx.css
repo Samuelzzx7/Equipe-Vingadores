@@ -9,15 +9,18 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Goldman', sans-serif;
+    overflow: hidden;
 }
 
 header {
+    margin-top: 0;
     height: 15vh;
     background-color: rgba(255, 255, 255, 0.2);
     border-bottom: rgba(255, 255, 255, 0.3) solid 2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 #indice #menu {
