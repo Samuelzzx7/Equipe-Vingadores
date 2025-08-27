@@ -1,6 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(imagens/landingPage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Goldman', sans-serif;
+}
+
+header {
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: rgba(255, 255, 255, 0.3) solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#indice #menu {
+    padding: 5px;
+    margin-top: 0%;
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    overflow:hidden;
+    text-align: center;
+    font-size: large;
+    z-index: 999;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 45px;
+    font-size: x-large;
+    font-family: "Goldman", sans-serif;
+    font-weight: bold;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu ul {
+    padding-left: 100px;
+} 
+
+#mobile-menu {
+    display: none;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+#mobile-menu div {
+    width: 34px;
+    height: 4px;
+    background-color: #fff;
+    margin: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.clique:hover {
+    cursor: pointer;
+}
+
+#logo {
+    width: 200px;
+    padding-top: 0;
+    margin-left: 7vw;
+    margin-right: 92px;
+    position: relative;
+}
+
+.divisor-secao {
+    border-bottom: 2px solid black;
+    width: 60.2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    display: block;
+    clear: both;
+}
+
+main {
+    max-width: 50rem;
+    margin: 5% 25px;
+}
+main h3 {
+    font-size: 4rem;
+    margin-bottom: 3%;
+    color: crimson;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+
+.botao-leia {
+    display: block;
+    width: fit-content;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 30px auto;
+}
+
+.botao-leia:hover {
+    background-color: darkred;
+}
+
+.botao-leia {
+    background-color: #e62429;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.botao-leia:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:1440px) and (min-width: 1150px) {
+    header {
+        justify-content: space-around;
+    }
+
+    #logo {
+        margin-right: 0px;
+    }
+
+    #menu {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #menu li{
+        margin-right: 20px;
+        font-size: larger;
+        color: black;;
+    }
+
+    #menu li a {
+        color: black;
+    }
+}
+
+@media (max-width:1150px) {
+    header {
+        justify-content: center;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    footer {
+        gap: 10%;
+    }
+
+    footer section {
+        width: 100%;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        display: block;
+        position: absolute;
+        right: 40px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #menu {
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.3);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        z-index: 1;
+        transform: translateX(100%);
+        padding-top: 5vh;
+        border-left: rgba(255, 255, 255, 0.3) solid 2px;
+    }
+
+    #menu.animar {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #menu.active {
+        transform: translatex(0);
+    }
+
+    #menu li {
+        display: block;
+        margin-top: 0vh;
+        margin-bottom: 24vh;
+        font-size: x-large;
+    }
 }
